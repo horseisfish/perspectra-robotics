@@ -1,0 +1,2 @@
+import { PageIntro, ButtonLink } from "@/components/ui";
+export default function NotFound() { return <div className="not-found"><PageIntro eyebrow="404 / PAGE NOT FOUND" title="A path yet to be explored." description="The page you requested could not be found. Explore our research or return to the homepage."/><div className="shell"><ButtonLink href="/">Return to Perspectra</ButtonLink></div></div>; }

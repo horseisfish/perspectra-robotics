@@ -1,0 +1,5 @@
+import { ImageResponse } from "next/og";
+export const alt = "Perspectra Robotics — Building Predictive Models for Physical Intelligence";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function Image() { return new ImageResponse(<div style={{width:"100%",height:"100%",display:"flex",flexDirection:"column",justifyContent:"space-between",background:"#EFF7FF",padding:"64px 76px",color:"#183153"}}><div style={{display:"flex",justifyContent:"space-between",fontSize:22,letterSpacing:4}}><span>PERSPECTRA ROBOTICS</span><span style={{color:"#3979C8",fontSize:17}}>PHYSICAL INTELLIGENCE RESEARCH</span></div><div style={{display:"flex",fontSize:68,letterSpacing:-3,lineHeight:1.13,maxWidth:1000}}>Building Predictive Models for Physical Intelligence.</div><div style={{display:"flex",alignItems:"center",gap:24,borderTop:"1px solid #D2E3F4",paddingTop:26,color:"#3979C8",fontSize:22}}><span>Experience</span><span>→</span><span>Interaction state</span><span>→</span><span>Physical futures</span></div></div>,size); }

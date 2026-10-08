@@ -1,0 +1,3 @@
+import { publications } from "@/lib/content";
+import { TextLink } from "./ui";
+export function Publications() { return <div className="publications">{publications.map(publication => <article className="publication" key={publication.slug}><div className="publication-meta"><span className="tag">{publication.kind}</span><span className="mono">{publication.status}</span></div><div className="publication-body"><div><h3>{publication.title}</h3><p>{publication.summary}</p></div><TextLink href={publication.slug}>Read the research</TextLink></div>{publication.pdf && <TextLink href={publication.pdf}>Download white paper</TextLink>}</article>)}</div>; }
