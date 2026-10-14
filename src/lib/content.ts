@@ -4,7 +4,7 @@ export const company = {
   address: "新北市中和區安和路161號",
 } as const;
 
-export const navigation = [{ href: "/research", label: "Research" }, { href: "/models", label: "Models" }, { href: "/about", label: "About" }, { href: "/contact", label: "Contact" }];
+export const navigation = [{ href: "/research", label: "Research" }, { href: "/about", label: "About" }, { href: "/contact", label: "Contact" }];
 
 export interface Publication { title: string; slug: string; kind: string; status: string; summary: string; pdf?: string; venue?: string; date?: string }
 export const publications: Publication[] = [{

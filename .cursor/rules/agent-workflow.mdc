@@ -1,0 +1,14 @@
+---
+description: 每次專案執行的起始閱讀與結束記憶更新規則
+alwaysApply: true
+---
+
+# Agent 執行與記憶
+
+遵循根目錄 AGENTS.md。
+開始前閱讀 README.md、docs/agent/MEMORY.md、docs/agent/STATUS.md 並檢查 git status。
+結束前更新 STATUS.md、追加 RUN_LOG.md、檢視並更新 MEMORY.md。
+README.md 在操作、架構或部署變更時更新；沒有變更時在 RUN_LOG.md 記錄已檢視。
+即使工作未完成或受阻，也記錄實際狀態、阻礙與下一步。
+驗證只記錄實際執行結果，不得將未執行的檢查記為通過。
+範例：移除首頁區塊後，記錄精簡決策、修改頁面、lint/typecheck/build 結果與剩餘視覺驗證。
