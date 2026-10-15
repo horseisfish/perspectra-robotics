@@ -1,4 +1,5 @@
 import { ButtonLink, TextLink } from "@/components/ui";
+import { PushBack } from "@/components/push-back";
 import { company } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -8,10 +9,11 @@ export default function Home() {
   return <>
     <section className="shell minimal-hero">
       <p className="section-label">PERSPECTRA ROBOTICS</p>
-      <h1>A physical perspective<br />on intelligence.</h1>
+      <h1>There’s more to the world<br />than meets the eye.</h1>
       <p className="minimal-lede">We develop Haptic World Models to help AI anticipate how the physical world responds to action.</p>
-      <ButtonLink href="/research">Explore our research</ButtonLink>
+      <ButtonLink href="/research">Enter our research</ButtonLink>
     </section>
+    <PushBack />
     <section className="shell minimal-section minimal-research">
       <div><p className="section-label">OUR FOCUS</p><h2>Haptic World Models</h2></div>
       <div><p>Learning from vision, touch, and force to understand contact, predict interaction, and support adaptive decisions.</p><p className="minimal-status">Research in progress · White paper in preparation</p><TextLink href="/research/haptic-world-models">Read our research perspective</TextLink></div>

@@ -1,6 +1,6 @@
 export const company = {
   name: "Perspectra Robotics Inc.", chineseName: "觀象科技股份有限公司",
-  email: "perspectrarobotics@gmail.com", phone: "(02) 2249-9912", phoneHref: "tel:+886222499912",
+  email: "perspectrarobotics@gmail.com", phone: "+886 2 22499912", phoneHref: "tel:+886222499912",
   address: "新北市中和區安和路161號",
 } as const;
 
