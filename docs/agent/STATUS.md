@@ -2,8 +2,6 @@
 
 更新日期：2026-10-14
 
-## 本次成果
-品牌符號更新為非對稱開放式幾何 P、冷藍接觸點與錯位回應線段。共用 LogoMark、public/logo.svg、導覽、頁尾、favicon、Open Graph 同步。
+本次完成：桌面頁尾上下兩排統一等寬三欄，中间描述與中文公司名稱居中對齊，保留窄螢幕排版。
 
-## 驗證
-lint 通過（既有警告）；webpack build 與 TypeScript 檢查通過（既有 metadataBase 提示）。README、MEMORY、RUN_LOG 已同步；尚未部署。
+純 CSS 排版變更，git diff --check 通過，未另跑建置；README、MEMORY、RUN_LOG 同步，尚未部署。

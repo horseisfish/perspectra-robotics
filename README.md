@@ -87,3 +87,17 @@ Perspectra Robotics Inc.／觀象科技股份有限公司
 ## 品牌符號
 
 Logo 採開放式幾何 P 與冷藍接觸點，呼應施力、接觸與回應。共用元件為 `src/components/logo.tsx`，可重用向量檔為 `public/logo.svg`；導覽、頁尾、favicon 與分享圖同步使用。
+
+## npm 安裝警告
+
+Vercel 安裝改用 `npm ci`，並在 install/build 指令啟動 npm 前移除環境注入的不支援設定 `npm_config_cache_dir` / `NPM_CONFIG_CACHE_DIR`。若自行設定 npm 快取，應使用 `npm_config_cache`。
+
+`package.json` 的 `allowScripts` 僅核准已檢視的 `unrs-resolver@1.12.2` 原生綁定準備腳本；依賴版本更新時需重新檢視。
+
+ESLint 保留 9：目前最新的 eslint-plugin-react 與 eslint-plugin-jsx-a11y peerDependencies 仍未支援 10。棄用警告仍可能出現，待插件支援後再升級，不使用強制 peer dependency 安裝。
+
+## 字體排版
+
+標題採自然字距，取消負字距壓縮，並增加單字間距；h1 行距 1.22、h2 行距 1.32，優先閱讀清晰度。
+
+桌面頁尾上下兩排採相同三欄配置，中間描述與中文公司名稱共用中心線；窄螢幕維持換行排版。

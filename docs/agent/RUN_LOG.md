@@ -83,3 +83,22 @@
 - 新增共用 LogoMark 與 public/logo.svg，導覽、頁尾、favicon 及 Open Graph 配合更新。
 - 根據使用者回饋改為非對稱幾何 P、接觸點與錯位線段，避免內凹雙曲線輪廓。
 - lint 通過（既有警告）；webpack build 與 TypeScript 檢查通過（既有 metadataBase 提示）。README、MEMORY、STATUS 同步更新；尚未部署。
+
+## 2026-10-14 — npm 警告整理
+
+- 查詢 registry：ESLint 10.12.0、eslint-config-next 16.4.1；最新 react、jsx-a11y 插件 peer 未支援 ESLint 10，保留相容的 9，不強制升級。
+- 檢視 unrs-resolver postinstall 及 napi-postinstall 原生綁定準備逻輯，新增版本限定 allowScripts。
+- Vercel 使用 npm ci 並於 install/build 啟動前 unset cache-dir 環境键；修正 PostCSS 匿名匯出。
+- lint 零警告、webpack build / TypeScript 通過；環境鍵模擬清理後 npm 無警告；resolver binding 載入成功；未驗證 Vercel 實際重新安裝。ESLint 棄用警告仍保留。
+- README、MEMORY、STATUS 更新；尚未部署。
+
+## 2026-10-14 — 閱讀字距
+
+- 根據使用者截圖，移除全站負 letter-spacing，標題 word-spacing .045em，h1/h2 行距改為 1.22/1.32，內文 letter-spacing .005em。
+- lint 零警告、webpack build 及 TypeScript 通過（既有 metadataBase 提示）；瀏覽器確認主標自然字距、單字間距約 3px，無水平溢出。
+- README、MEMORY、STATUS 已更新；未部署。
+
+## 2026-10-14 — 頁尾中間對齊
+
+- 851px 以上的 footer-top/footer-bottom 共用等寬三欄，第二欄文字居中，信箱靠右。窄螢幕保留原排版。
+- 純 CSS 修改，git diff --check 通過，未重跑建置。README、MEMORY、STATUS 更新；尚未部署。

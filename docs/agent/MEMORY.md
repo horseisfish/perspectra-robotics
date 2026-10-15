@@ -31,3 +31,9 @@
 - 頁面切換使用 420ms 小幅位移與阻尼回彈進場，表現 haptic 接觸感；導覽保持穩定、立即回到頁首，reduced-motion 停用動畫。
 
 - Logo 使用非對稱幾何 P、錯位線段與冷藍接觸點；使用者不喜歡內凹雙曲線帶來的人體聯想，避免此輪廓。
+
+- Vercel 使用 npm ci 並移除 npm_config_cache_dir / NPM_CONFIG_CACHE_DIR；allowScripts 僅核准 unrs-resolver@1.12.2。ESLint 10 受 React / jsx-a11y 插件 peerDependencies 限制，保留 9 並追蹤升級。
+
+- 使用者認為標題字距太緊；全站取消負字距壓縮，標題增加 word-spacing .045em，h1/h2 行距 1.22/1.32。
+
+- 桌面頁尾上下兩排共用等寬三欄，中間品牌描述與中文公司名稱居中對齊。
